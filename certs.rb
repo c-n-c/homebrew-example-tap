@@ -4,7 +4,7 @@
 class Certs < Formula
   desc "Installation of example certs"
   homepage "https://github.com/c-n-c"
-  url "http://localhost:8082/artifactory/test/certs.zip"
+  # url "http://localhost:8082/artifactory/test/certs.zip"
   version "1.0"
   sha256 "bc9c825fbdecbb75ed474deebad4f887cbc3fb7cb026993d7e3dbc08f6e73594"
 
@@ -20,8 +20,8 @@ class Certs < Formula
     #                       "--disable-silent-rules",
     #                       "--prefix=#{prefix}"
     # system "cmake", ".", *std_cmake_args
-    chmod 0644, "cert.pem"
-    system "bash", "--debug", "installer.sh"
+    # chmod 0644, "cert.pem"
+    system "bash", "--debug", "hello_world.sh"
   end
 
   # test do
