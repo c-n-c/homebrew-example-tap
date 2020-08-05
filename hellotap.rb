@@ -6,7 +6,7 @@ class Hellotap < Formula
   homepage "https://abcdbank.com/"
   url "http://localhost:8082/artifactory/test/hellotap.zip"
   version "1.0"
-  sha256 "bcc2986f1c3ac24259f906affbeffaf077c25e21b520311e33d18c722601d76e"
+  sha256 "ddc1facd52f79cf286c67050e41d2869494dfb1fd27581a80d59da7aa165a6a9"
 
   bottle :unneeded
 
