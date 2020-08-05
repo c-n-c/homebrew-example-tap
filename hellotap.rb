@@ -13,7 +13,7 @@ class Hellotap < Formula
   # depends_on "cmake" => :build
 
   def install
-    system "bash", "--debug", "installer.sh"
+    system "bash", "--debug", "install.sh"
   end
 
   # test do
