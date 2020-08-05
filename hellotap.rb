@@ -6,12 +6,13 @@ class Hellotap < Formula
   homepage "https://abcdbank.com/"
   url "http://localhost:8082/artifactory/test/hellotap.zip"
   version "1.0"
-  sha256 "d5aa9e14f92922eddf1a3803f4227660717ff65804d88d2656aec690b638b05a"
+  sha256 "bcc2986f1c3ac24259f906affbeffaf077c25e21b520311e33d18c722601d76e"
 
   bottle :unneeded
 
+  # depends_on "cmake" => :build
+
   def install
-    chmod 0644, "cert.pem"
     system "bash", "--debug", "installer.sh"
   end
 
