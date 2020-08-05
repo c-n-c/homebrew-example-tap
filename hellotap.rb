@@ -6,13 +6,14 @@ class Hellotap < Formula
   homepage "https://abcdbank.com/"
   url "http://localhost:8082/artifactory/test/hellotap.zip"
   version "1.0"
-  sha256 "4285697dc99f37b181f22f4a890b55edb0bde2d49d0386761bace8e69c6a9517"
+  sha256 "62ae9368d69fd64b12eeeca232085ef29d92511f5434bd2b1deeb823e4c97a48"
 
   bottle :unneeded
 
   # depends_on "cmake" => :build
 
   def install
+    prefix.install "testfile.txt"
     system "bash", "install.sh"
     system "make", "install"
   end
