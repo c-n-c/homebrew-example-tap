@@ -1,16 +1,14 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 
-class Certs < Formula
-  desc "Installation of IDFC hellotap"
-  homepage "https://idfcbank.com/"
+class Hellotap < Formula
+  desc "Installation of demo hellotap"
+  homepage "https://abcdbank.com/"
   url "http://localhost:8082/artifactory/test/hellotap.zip"
   version "1.0"
   sha256 "d5aa9e14f92922eddf1a3803f4227660717ff65804d88d2656aec690b638b05a"
 
   bottle :unneeded
-
-  # depends_on "cmake" => :build
 
   def install
     chmod 0644, "cert.pem"
