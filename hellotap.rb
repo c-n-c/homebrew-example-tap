@@ -5,8 +5,8 @@ class Hellotap < Formula
   desc "Installation of demo hellotap"
   homepage "https://abcdbank.com/"
   url "http://127.0.0.1/artifactory/release/hellotap.zip"
-  version "52"
-  sha256 "f0d6dfbb4afe037f196f74aff9b75038117fb73dafda82123be5c3a1384f651f"
+  version "58"
+  sha256 "b9a6b0bcaacddf8f5936f29f78a4259d4f5762bbbf4b1f4a25887bea51eca55c"
 
   bottle :unneeded
 
@@ -18,16 +18,7 @@ class Hellotap < Formula
     system "make", "install"
   end
 
-  # test do
-  #   # `test do` will create, run in and delete a temporary directory.
-  #   #
-  #   # This test will fail and we won't accept that! For Homebrew/homebrew-core
-  #   # this will need to be a test that verifies the functionality of the
-  #   # software. Run the test with `brew test certs`. Options passed
-  #   # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
-  #   #
-  #   # The installed folder is not in the path, so use the entire path to any
-  #   # executables being tested: `system "#{bin}/program", "do", "something"`.
-  #   system "false"
-  # end
+  test do
+    assert_equal version, shell_output("cat #{prefix}/testfile.txt")
+  end
 end
