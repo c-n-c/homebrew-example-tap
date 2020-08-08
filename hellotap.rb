@@ -5,8 +5,8 @@ class Hellotap < Formula
   desc "Installation of demo hellotap"
   homepage "https://abcdbank.com/"
   url "http://127.0.0.1/artifactory/release/hellotap.zip"
-  version "62"
-  sha256 "78deabd2efc550ac66544a02860eaf76931e3883b7e3f1cd1a11870614c02bc3"
+  version "63"
+  sha256 "6d1365a468d0aaac785dc795e1a7d02ca0c82fca0f0733ad79a03e0f9fed9e64"
 
   bottle :unneeded
 
